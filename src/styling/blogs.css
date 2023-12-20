@@ -1,5 +1,11 @@
+
+/* blogs.css */
+
+/* Add your existing styles here */
+
+/* Responsive styles */
 .blog__page {
-    padding: 30px 170px;
+  padding: 30px 170px;
   }
   
   .blog__page__header {
@@ -75,4 +81,22 @@
     font-size: 25px;
     font-weight: 500;
     line-height: 1.5em;
+  }
+  @media only screen and (max-width: 768px) {
+    .blogs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .blog {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .blog {
+      width: 100%;
+    }
   }
